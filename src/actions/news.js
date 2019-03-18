@@ -19,7 +19,7 @@ export const getNews = (category) => {
             }).catch(err => console.log(err))
         } 
         else {
-            let local = localStorage.getItem('news', JSON.parse('news'))
+            let local = JSON.parse(localStorage.getItem('news'))
             dispatch({
                 type: GET_NEWS,
                 payload: local
