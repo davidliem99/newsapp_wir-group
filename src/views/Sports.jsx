@@ -17,7 +17,6 @@ class Sports extends Component {
   };
 
   render() {
-    console.log(this.props.news);
     return (
       <div>
         <center>
