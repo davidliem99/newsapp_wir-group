@@ -13,6 +13,51 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <meta name="apple-mobile-web-app-title" content="React PWA WWWID" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="%PUBLIC_URL%/apple-touch-icon.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="%PUBLIC_URL%/assets/splash/launch-640x1136.png"
+      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="%PUBLIC_URL%/assets/splash/launch-750x1294.png"
+      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="%PUBLIC_URL%/assets/splash/launch-1242x2148.png"
+      media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="%PUBLIC_URL%/assets/splash/launch-1125x2436.png"
+      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="%PUBLIC_URL%/assets/splash/launch-1536x2048.png"
+      media="(min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="%PUBLIC_URL%/assets/splash/launch-1668x2224.png"
+      media="(min-device-width: 834px) and (max-device-width: 834px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="%PUBLIC_URL%/assets/splash/launch-2048x2732.png"
+      media="(min-device-width: 1024px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)"
+    />
+
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -35,6 +80,51 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>Wir Group</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      #startingLoader {
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+          Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #ffffff;
+      }
+      #startingLoader .header {
+        top: 0;
+        left: 0;
+        width: 100%;
+        position: fixed;
+        background-color: rgba(255, 255, 255, 0.95);
+      }
+      #startingLoader .container {
+        margin: 0 auto;
+        max-width: 1000px;
+        height: 65px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+      }
+      #startingLoader .menu-icon {
+        width: 20px;
+        height: 20px;
+        padding: 0 18px;
+      }
+      #startingLoader .logo {
+        width: 45px;
+        height: 45px;
+      }
+      #startingLoader .loading {
+        font-size: 18px;
+        color: #707070;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+      }
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
